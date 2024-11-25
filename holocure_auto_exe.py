@@ -1,5 +1,6 @@
 #~ auto-py-to-exe
 #pyinstaller --noconfirm --onedir --console --icon "E:\KenzoDir_hd500\Estudos\Python\GIT\holocure_automate\automated_fish\fish_v2\holocure_fish.ico" --name "holocure-autofishing" --contents-directory "." --add-data "E:\KenzoDir_hd500\Estudos\Python\GIT\holocure_automate\automated_fish\fish_v2\fishing_module.py;." --add-data "E:\KenzoDir_hd500\Estudos\Python\GIT\holocure_automate\automated_fish\fish_v2\360p;360p/" --add-data "E:\KenzoDir_hd500\Estudos\Python\GIT\holocure_automate\automated_fish\fish_v2\images;images/"  "E:\KenzoDir_hd500\Estudos\Python\GIT\holocure_automate\automated_fish\fish_v2\holocure_fish_exe.py"#baseline
+
 import numpy as np
 import time
 import datetime
@@ -19,6 +20,7 @@ while game_mode not in [1,2]:
 ctypes.windll.shcore.SetProcessDpiAwareness(2)
 hwndMain = win32gui.FindWindow("YYGameMakerYY", "HoloCure")
 window = win32ui.CreateWindowFromHandle(hwndMain)
+
 
 if game_mode == 1:
     super_time = []

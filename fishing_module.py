@@ -1,5 +1,6 @@
 #baseline
 import os
+import json
 import numpy as np
 import time
 import matplotlib.pyplot as plt
@@ -38,13 +39,16 @@ BUTTON = {"0": 0x30,"1": 0x31,"2": 0x32,"3": 0x33,"4": 0x34,"5": 0x35,"6": 0x36,
     "n": 0x4E,"o": 0x4F,"p": 0x50,"q": 0x51,"r": 0x52,"s": 0x53,"t": 0x54,"u": 0x55,"v": 0x56,"w": 0x57,"x": 0x58,"y": 0x59,"z": 0x5A,
     "space": 0x20,"enter": 0x0D,"left": 0x25,"up": 0x26,"right": 0x27,"down": 0x28,"shift": 0x10,"ctrl": 0x11,}
 
+with open(f'C:/Users/{os.getlogin()}/AppData/Local/HoloCure/settings.json', 'r') as file:
+    data = json.load(file)
+# Print the data
 
-keybinds = {"space": "space",
-            "left": "a",
-            "right": "d",
-            "up": "w",
-            "down": "s",
-            "quit":'q'}
+keybinds = {"space": f"{data['theButtons'][0].lower()}",
+            "left": f"{data['theButtons'][2].lower()}",
+            "right": f"{data['theButtons'][3].lower()}",
+            "up": f"{data['theButtons'][4].lower()}",
+            "down": f"{data['theButtons'][5].lower()}",
+            "quit": f"{data['theButtons'][1].lower()}"}
 
 def press(win, button_key: str):
     """Send button press to the target window."""
