@@ -1,6 +1,5 @@
 #~ auto-py-to-exe
-#pyinstaller --noconfirm --onedir --console --icon "E:\KenzoDir_hd500\Estudos\Python\GIT\holocure_automate\automated_fish\fish_v2\holocure_fish.ico" --name "holocure-autofishing" --contents-directory "." --add-data "E:\KenzoDir_hd500\Estudos\Python\GIT\holocure_automate\automated_fish\fish_v2\fishing_module.py;." --add-data "E:\KenzoDir_hd500\Estudos\Python\GIT\holocure_automate\automated_fish\fish_v2\360p;360p/" --add-data "E:\KenzoDir_hd500\Estudos\Python\GIT\holocure_automate\automated_fish\fish_v2\images;images/"  "E:\KenzoDir_hd500\Estudos\Python\GIT\holocure_automate\automated_fish\fish_v2\holocure_fish_exe.py"#baseline
-
+#pyinstaller --noconfirm --onedir --console --icon "E:\KenzoDir_hd500\Estudos\Python\GIT\git-auto-holocure\holocure_fish.ico" --contents-directory "." --add-data "E:\KenzoDir_hd500\Estudos\Python\GIT\git-auto-holocure\fishing_module.py;." --add-data "E:\KenzoDir_hd500\Estudos\Python\GIT\git-auto-holocure\360p;360p/" --add-data "E:\KenzoDir_hd500\Estudos\Python\GIT\git-auto-holocure\images\fish;fish/"  "E:\KenzoDir_hd500\Estudos\Python\GIT\git-auto-holocure\holocure_auto_exe.py"
 import numpy as np
 import time
 import datetime
