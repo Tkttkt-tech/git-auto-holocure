@@ -2,7 +2,7 @@
 
 - Code forked from https://github.com/nopeAnon/Automated-HoloCure-Fishing
 
-- Download zip file Here[https://github.com/Thomaskenzo/git-auto-holocure/releases/tag/autofish-autocassino]
+- Download zip file [Here](https://github.com/Thomaskenzo/git-auto-holocure/releases/tag/autofish-autocassino)
 
 - Unzip the file holocure-autofish-autocassino.zip
 
